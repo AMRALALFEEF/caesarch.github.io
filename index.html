@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RM Architect — عمرو خالد محمد العفيف | تصميم معماري، مخططات، رخص بناء، تصميم جرافيك وإعداد ملفات ومستندات.">
+<title>RM Architect — عمرو خالد محمد العفيف</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090a;--bg2:#0e1012;--card:#121416;--text:#f7f4ed;--muted:#aaa79f;--gold:#c8a45d;--gold2:#e7ce91;--line:rgba(231,206,145,.18);--max:1200px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Cairo,Arial,sans-serif;line-height:1.8}
+a{text-decoration:none;color:inherit}.container{width:min(92%,var(--max));margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,9,10,.62);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brand img{width:45px;height:45px;border-radius:50%;object-fit:cover}.brand b{font-size:16px}.brand span{display:block;color:var(--gold);font-size:9px;letter-spacing:2.5px;direction:ltr}
+.navlinks{display:flex;gap:30px;font-size:13px;color:#d6d1c7}.navlinks a{position:relative}.navlinks a:after{content:"";position:absolute;right:0;bottom:-7px;width:0;height:1px;background:var(--gold);transition:.3s}.navlinks a:hover:after{width:100%}
+.navcta{border:1px solid var(--line);padding:9px 16px;border-radius:30px;color:var(--gold2);font-size:12px}.navcta:hover{background:rgba(200,164,93,.1)}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:#070809}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(5,6,7,.96) 0%,rgba(5,6,7,.76) 40%,rgba(5,6,7,.22) 100%),url('https://files.idyllic.app/files/static/66400?optimizer=image&width=3840');background-size:cover;background-position:center;filter:saturate(.8)}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:220px;background:linear-gradient(transparent,var(--bg));z-index:1}
+.hero-content{position:relative;z-index:2;padding-top:110px;max-width:720px}.eyebrow{color:var(--gold2);font-size:12px;letter-spacing:4px;direction:ltr;margin-bottom:20px}
+.hero h1{font-size:clamp(45px,7vw,92px);line-height:1.04;margin:0;font-weight:600;letter-spacing:-2px}.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lead{color:#d2cec5;font-size:18px;max-width:650px;margin:26px 0 35px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 22px;border-radius:6px;border:1px solid var(--gold);font-weight:600;font-size:14px;transition:.25s}.btn.gold{background:var(--gold);color:#0a0a0a}.btn.dark{background:rgba(10,10,10,.2);backdrop-filter:blur(5px)}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.hero-meta{display:flex;gap:35px;margin-top:45px;color:#aaa;font-size:11px}.hero-meta strong{display:block;color:#f3efe7;font-size:13px;margin-bottom:2px}
+.scroll{position:absolute;z-index:3;bottom:35px;left:50%;transform:translateX(-50%);color:#aaa;font-size:10px;letter-spacing:2px;direction:ltr}.scroll:after{content:"";display:block;width:1px;height:42px;background:linear-gradient(var(--gold),transparent);margin:8px auto 0}
+section{padding:120px 0}.section-top{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:50px}.tag{color:var(--gold);font-size:11px;letter-spacing:3px;direction:ltr}.section-top h2{font-size:clamp(32px,4vw,56px);line-height:1.15;margin:10px 0 0}.section-top p{max-width:500px;color:var(--muted);font-size:14px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08)}.service{background:var(--card);padding:35px;min-height:245px;transition:.35s;position:relative;overflow:hidden}.service:hover{background:#17191c;transform:translateY(-5px)}.service:before{content:"";position:absolute;right:0;top:0;width:1px;height:0;background:var(--gold);transition:.4s}.service:hover:before{height:100%}.service .n{font-family:"DM Serif Display",serif;color:var(--gold);font-size:25px}.service h3{font-size:20px;margin:22px 0 10px}.service p{color:var(--muted);font-size:13px;margin:0}
+.statement{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:65px 0;background:linear-gradient(90deg,transparent,rgba(200,164,93,.05),transparent)}.statement p{font-family:"DM Serif Display",serif;font-size:clamp(28px,4vw,54px);line-height:1.3;margin:0;max-width:950px}.statement span{color:var(--gold)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}.about-logo{display:flex;justify-content:center}.about-logo img{width:min(390px,80%);border-radius:50%;box-shadow:0 35px 100px rgba(0,0,0,.55)}.about-copy h2{font-size:42px;line-height:1.2;margin:10px 0 18px}.about-copy p{color:#b8b4ac;font-size:15px}.signature{margin-top:25px;color:var(--gold2);font-family:"DM Serif Display",serif;font-size:25px}
+.work{background:#0b0d0f}.gallery{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:270px 270px;gap:14px}.project{position:relative;overflow:hidden;border-radius:4px;background:#151719}.project:first-child{grid-row:span 2}.project img{width:100%;height:100%;object-fit:cover;display:block;transition:.7s}.project:hover img{transform:scale(1.06)}.project:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.86))}.project-info{position:absolute;z-index:2;bottom:20px;right:22px;left:22px}.project-info small{color:var(--gold2);font-size:10px;letter-spacing:1.5px}.project-info h3{margin:4px 0;font-size:19px}.project-info p{margin:0;color:#c0bcb4;font-size:11px}.future-note{margin-top:18px;color:#77736c;font-size:11px}
+.contact{padding-bottom:130px}.contact-box{border:1px solid var(--line);padding:55px;display:grid;grid-template-columns:1fr .9fr;gap:60px;background:radial-gradient(circle at 85% 20%,rgba(200,164,93,.11),transparent 35%),#101214}.contact-box h2{font-size:48px;line-height:1.15;margin:8px 0 15px}.contact-box p{color:var(--muted);max-width:570px}.contact-links{display:flex;flex-direction:column;gap:12px;justify-content:center}.contact-link{border-bottom:1px solid rgba(255,255,255,.08);padding:15px 0;display:flex;justify-content:space-between;gap:20px}.contact-link span{color:var(--gold);font-size:11px;direction:ltr}.contact-link strong{font-size:16px;direction:ltr}
+footer{border-top:1px solid rgba(255,255,255,.07);padding:30px 0;color:#77736c;font-size:11px}.footer-row{display:flex;justify-content:space-between}.goldtext{color:var(--gold)}
+.wa{position:fixed;z-index:120;bottom:24px;left:24px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#07110a;display:grid;place-items:center;font-weight:700;box-shadow:0 12px 30px rgba(0,0,0,.4);animation:pulse 2.5s infinite}.wa svg{width:27px;height:27px}.wa-label{position:absolute;left:68px;white-space:nowrap;background:#111;color:#ddd;border:1px solid rgba(255,255,255,.08);padding:5px 10px;border-radius:20px;font-size:10px;opacity:0;transform:translateX(-8px);transition:.2s}.wa:hover .wa-label{opacity:1;transform:none}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@keyframes pulse{0%,100%{box-shadow:0 12px 30px rgba(0,0,0,.4),0 0 0 0 rgba(37,211,102,.35)}60%{box-shadow:0 12px 30px rgba(0,0,0,.4),0 0 0 14px rgba(37,211,102,0)}}
+@media(max-width:850px){.navlinks{display:none}.navcta{font-size:11px}.hero{min-height:850px}.hero-bg{background-position:58% center}.hero-content{padding-top:130px}.hero h1{letter-spacing:-1px}.hero .lead{font-size:15px}.hero-meta{gap:20px}.section-top{display:block}.section-top p{margin-top:15px}.services{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:40px}.about-logo{order:2}.about-copy h2{font-size:34px}.gallery{grid-template-columns:1fr;grid-template-rows:320px 230px 230px}.project:first-child{grid-row:auto}.contact-box{grid-template-columns:1fr;padding:35px;gap:30px}.contact-box h2{font-size:36px}.footer-row{display:block}.footer-row div+div{margin-top:7px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home"><img src="assets/rm-monogram.jpeg" alt="RM Architect"><div><b>RM Architect</b><span>ARCHITECTURE • DESIGN</span></div></a>
+      <div class="navlinks"><a href="#services">الخدمات</a><a href="#about">عنّي</a><a href="#work">نماذج</a><a href="#contact">تواصل</a></div>
+      <a class="navcta" href="https://wa.me/966539838090" target="_blank" rel="noopener">ابدأ مشروعك</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-content reveal">
+      <div class="eyebrow">RM ARCHITECT / PERSONAL STUDIO</div>
+      <h1>نصنع الفكرة<br><em>بهوية تُرى.</em></h1>
+      <p class="lead">عمرو خالد محمد العفيف — خدمات معمارية وإبداعية تجمع بين التصميم، الدقة، وتجهيز الملفات لتقديم حلول واضحة واحترافية للأفراد والشركات.</p>
+      <div class="actions">
+        <a class="btn gold" href="https://wa.me/966539838090" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+        <a class="btn dark" href="#services">استكشف الخدمات</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>ARCHITECTURE</strong>تصميم ومخططات</div>
+        <div><strong>DOCUMENTS</strong>ملفات ومستندات</div>
+        <div><strong>DESIGN</strong>جرافيك وهوية</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll">SCROLL</div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-top reveal"><div><div class="tag">SERVICES</div><h2>خدمات مصممة<br>للاحتياج.</h2></div><p>من الفكرة الأولى إلى الملف النهائي، أقدّم خدمات مرنة للأفراد والشركات مع إمكانية مناقشة تفاصيل كل طلب بشكل مباشر.</p></div>
+    <div class="services">
+      <article class="service reveal"><div class="n">01</div><h3>التصميم المعماري</h3><p>تصميم وتطوير الأفكار المعمارية وتوزيع المساحات بما يوازن بين الوظيفة والجمال.</p></article>
+      <article class="service reveal"><div class="n">02</div><h3>المخططات</h3><p>إعداد وتنظيم المخططات والرسومات المعمارية بصورة واضحة ومنظمة.</p></article>
+      <article class="service reveal"><div class="n">03</div><h3>رخص البناء</h3><p>تجهيز الملفات والاستشارات المتعلقة بمتطلبات وإجراءات رخص البناء.</p></article>
+      <article class="service reveal"><div class="n">04</div><h3>التصميم الجرافيكي</h3><p>تصاميم بصرية ومواد جرافيكية تعكس شخصية المشروع أو النشاط.</p></article>
+      <article class="service reveal"><div class="n">05</div><h3>الملفات والمستندات</h3><p>إعداد وتنسيق الملفات والمستندات بطريقة احترافية وسهلة الاستخدام.</p></article>
+      <article class="service reveal"><div class="n">06</div><h3>خدمات للأفراد والشركات</h3><p>خدمات حسب الطلب، من الأعمال الصغيرة إلى احتياجات المشاريع والأعمال.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="statement"><div class="container reveal"><p>“التصميم ليس مجرد شكل؛ <span>إنه الطريقة التي تُترجم بها الفكرة إلى تجربة.</span>”</p></div></div>
+
+<section id="about">
+  <div class="container about">
+    <div class="about-logo reveal"><img src="assets/rm-architect-gold.jpeg" alt="RM Architect"></div>
+    <div class="about-copy reveal"><div class="tag">ABOUT RM</div><h2>عمرو خالد محمد العفيف</h2><p>RM Architect هي الهوية الشخصية التي أقدّم من خلالها خدماتي في التصميم المعماري، المخططات، تجهيز واستشارات رخص البناء، التصميم الجرافيكي، وإعداد الملفات والمستندات.</p><p>الفكرة بسيطة: خدمة واضحة، تواصل مباشر، واهتمام بالتفاصيل. إذا كان لديك مشروع أو احتياج محدد، أرسل التفاصيل وسنبدأ من هناك.</p><div class="signature">RM Architect</div></div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="container">
+    <div class="section-top reveal"><div><div class="tag">SELECTED VISUALS</div><h2>نماذج وإلهام<br>بصري.</h2></div><p>هذا القسم مخصص مستقبلًا لأعمال RM Architect ومشاريعك الفعلية. الصور الحالية أمثلة بصرية/إلهامية وليست أعمالًا منسوبة إليك.</p></div>
+    <div class="gallery">
+      <article class="project reveal"><img src="https://files.idyllic.app/files/static/66400?optimizer=image&width=1600" alt="مثال بصري لفيلا عصرية"><div class="project-info"><small>INSPIRATION / EXTERIOR</small><h3>Modern Luxury Villa</h3><p>مثال بصري للاتجاه المعاصر الفاخر.</p></div></article>
+      <article class="project reveal"><img src="https://fancyhouse-design.com/wp-content/uploads/2023/11/Every-corner-of-the-living-room-reflects-a-blend-of-contemporary-design-with-a-hint-of-LA-flair.-630x630.jpg" alt="مثال بصري لتصميم داخلي"><div class="project-info"><small>INSPIRATION / INTERIOR</small><h3>Contemporary Interior</h3><p>مثال بصري للتصميم الداخلي المعاصر.</p></div></article>
+      <article class="project reveal"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663413179669/UdNxJZzEU8oifkmSxNdgwg/hero-main-DS4dwJ5d8Qhayc9qB6okXW.webp" alt="مثال بصري للمخططات المعمارية"><div class="project-info"><small>INSPIRATION / DRAWINGS</small><h3>Architectural Plans</h3><p>مثال بصري على بيئة العمل والمخططات.</p></div></article>
+    </div>
+    <div class="future-note">* سيتم استبدال هذه النماذج تدريجيًا بأعمالك ومشاريعك وصورك الخاصة عند توفرها.</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-box reveal">
+      <div><div class="tag">CONTACT</div><h2>لديك فكرة؟<br><span style="color:var(--gold)">خلّنا نبدأ.</span></h2><p>أرسل تفاصيل الخدمة التي تحتاجها عبر واتساب أو البريد الإلكتروني، وسيتم التواصل معك لمناقشة المتطلبات.</p><a class="btn gold" href="https://wa.me/966539838090" target="_blank" rel="noopener">تواصل الآن</a></div>
+      <div class="contact-links">
+        <a class="contact-link" href="https://wa.me/966539838090" target="_blank" rel="noopener"><span>WHATSAPP</span><strong>+966 53 983 8090</strong></a>
+        <a class="contact-link" href="tel:+966539838090"><span>PHONE</span><strong>+966 53 983 8090</strong></a>
+        <a class="contact-link" href="mailto:amralafeef1@gmail.com"><span>EMAIL</span><strong>amralafeef1@gmail.com</strong></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<a class="wa" href="https://wa.me/966539838090" target="_blank" rel="noopener" aria-label="واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.5 0 .17 5.33.17 11.88c0 2.09.55 4.13 1.59 5.92L.08 24l6.36-1.67a11.9 11.9 0 0 0 5.61 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.23-6.14-3.44-8.38ZM12.06 21.7h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.77.99 1.01-3.68-.23-.38a9.8 9.8 0 0 1-1.5-5.17C2.2 6.47 6.63 2.04 12.06 2.04c2.63 0 5.1 1.03 6.96 2.9a9.77 9.77 0 0 1 2.88 6.96c0 5.42-4.43 9.8-9.84 9.8Zm5.38-7.35c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.02-1.04 2.49s1.07 2.89 1.21 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.38.2 1.9.12.58-.09 1.72-.7 1.96-1.37.24-.68.24-1.26.17-1.38-.07-.12-.27-.2-.56-.34Z"/></svg>
+  <span class="wa-label">تواصل عبر واتساب</span>
+</a>
+<footer><div class="container footer-row"><div>© <span id="year"></span> <span class="goldtext">RM Architect</span></div><div>عمرو خالد محمد العفيف — Riyadh, Saudi Arabia</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
